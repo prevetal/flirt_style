@@ -1,0 +1,166 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 29px;
+    }
+
+
+    .cont
+    {
+        padding: 0 12px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .image
+    {
+        margin-top: 24px;
+
+        gap: 20px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 36px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 17px;
+    }
+
+
+    .first_section .image img
+    {
+        height: 180px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .gallery .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+
+    /*------------------
+        Our approach
+    ------------------*/
+    .our_approach .row > *
+    {
+        max-width: 100%;
+    }
+
+
+
+    /*--------------
+        Dead end
+    --------------*/
+    .dead_end .block_head .title br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------------
+        Order psychologist
+    ------------------------*/
+    .order_psychologist .btns
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Experts
+    -------------*/
+    .experts .link a
+    {
+        padding: 17px 16px;
+    }
+
+
+
+    /*-------------
+        Methods
+    -------------*/
+    .methods .block_head
+    {
+        width: calc(100% + 24px);
+        margin-right: -12px;
+        margin-left: -12px;
+        padding: 60px 12px 50px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .row > *
+    {
+        max-width: 100%;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .type + .type
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .code
+    {
+        font-size: 116px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links
+    {
+        width: 100%;
+    }
+
+
+    footer .links + .links
+    {
+        margin-top: 40px;
+    }
+}

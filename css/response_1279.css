@@ -1,0 +1,592 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 44px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    .block
+    {
+        margin-bottom: 160px;
+    }
+
+    .block.small_m
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        padding-right: 24px;
+    }
+
+
+    .accordion_item:nth-child(2n)
+    {
+        padding-left: 24px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 24px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 40px;
+        padding-top: 40px;
+
+        gap: 30px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-top: 40px;
+    }
+
+
+
+    header .menu
+    {
+        gap: 28px;
+    }
+
+
+    header .sub_menu
+    {
+        width: 480px;
+        margin-top: 20px;
+        padding: 20px;
+
+        gap: 16px 20px;
+    }
+
+
+    header .sub_menu:after
+    {
+        height: 20px;
+    }
+
+
+
+    header .phone
+    {
+        font-size: 14px;
+    }
+
+
+    header .phone .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 24px;
+    }
+
+
+    .page_head .cont
+    {
+        gap: 24px;
+    }
+
+
+    .breadcrumbs
+    {
+        font-size: 14px;
+    }
+
+
+    .page_title
+    {
+        width: 880px;
+        margin-top: 20px;
+    }
+
+
+    .page_head .links
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.big_m
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 36px;
+    }
+
+
+    .text_block ul.gap
+    {
+        gap: 16px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 10px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-top: 44px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 72px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 22px;
+    }
+
+
+    .first_section .image img
+    {
+        height: 360px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 556px;
+        padding: 24px 24px 0 0;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .link a
+    {
+        padding: 18px 56px;
+    }
+
+
+    .about_info .gallery .swiper-slide
+    {
+        width: 480px;
+    }
+
+
+
+    /*------------------
+        Our approach
+    ------------------*/
+    .our_approach .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .our_approach .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+
+
+
+    /*--------------
+        Dead end
+    --------------*/
+    .dead_end
+    {
+        margin-bottom: -70px;
+        padding-top: 80px;
+        padding-bottom: 400px;
+
+        border-radius: 70px 70px 0 0;
+    }
+
+
+    .dead_end .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 720px;
+    }
+
+
+    .dead_end .btn
+    {
+        width: 400px;
+    }
+
+
+    .dead_end .items
+    {
+        bottom: 32px;
+
+        transform: translateX(-50%) scale(.7);
+    }
+
+
+
+    /*------------------------
+        Order psychologist
+    ------------------------*/
+    .order_psychologist
+    {
+        padding: 80px 0;
+
+        border-radius: 70px;
+    }
+
+
+    .order_psychologist .data
+    {
+        padding-top: 0;
+    }
+
+
+    .order_psychologist .data .text_block
+    {
+        max-width: calc(100% - 408px);
+    }
+
+
+    .order_psychologist .btns
+    {
+        width: 360px;
+
+        gap: 40px;
+    }
+
+
+
+    /*-------------
+        Experts
+    -------------*/
+    .experts .expert
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .experts .expert .photo
+    {
+        width: 340px;
+        height: 380px;
+    }
+
+
+    .experts .expert .photo + *
+    {
+        width: calc(100% - 388px);
+    }
+
+
+    .experts .expert .features .val
+    {
+        width: calc(100% - 216px);
+    }
+
+
+    .experts .expert .features .val > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list
+    {
+        height: 1343px;
+    }
+
+
+    .reviews .review .title
+    {
+        font-size: 22px;
+    }
+
+
+    .reviews .review3
+    {
+        top: 140px;
+
+        width: calc(100% - 400px);
+    }
+
+    .reviews .review4
+    {
+        right: 0;
+        bottom: 0;
+
+        width: calc(100% - 440px);
+    }
+
+    .reviews .review5
+    {
+        left: 0;
+    }
+
+    .reviews .review6
+    {
+        width: 400px;
+    }
+
+
+    .reviews .review1 .text_block,
+    .reviews .review3 .text_block,
+    .reviews .review4 .text_block
+    {
+        margin-top: 24px;
+    }
+
+
+    .reviews .review .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------
+        Methods
+    -------------*/
+    .methods
+    {
+        padding-bottom: 0;
+    }
+
+
+    .methods .block_head
+    {
+        padding: 80px;
+    }
+
+
+
+    .methods .marquee
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .tariffs .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .tariffs .bottom
+    {
+        margin-top: 80px;
+    }
+
+
+    .tariffs .bottom .btn
+    {
+        width: 400px;
+    }
+
+
+
+    /*-----------------
+        Alternative
+    -----------------*/
+    .alternative .data .title
+    {
+        padding: 40px 20px 16px;
+    }
+
+
+
+    /*-------------
+        Partner
+    -------------*/
+    .partner .data
+    {
+        width: calc(100% - 520px);
+    }
+
+
+    .partner .image
+    {
+        width: 480px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        gap: 50px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .cols .list
+    {
+        width: calc(100% - 368px);
+    }
+
+
+    .articles .article .thumb
+    {
+        width: 220px;
+    }
+
+
+    .articles .article .thumb + *
+    {
+        width: calc(100% - 240px);
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 18px;
+
+        width: 340px;
+    }
+
+
+
+    .articles aside
+    {
+        width: 320px;
+    }
+
+
+    .articles .categories
+    {
+        padding: 40px 20px;
+    }
+
+
+    .articles .categories .title
+    {
+        font-size: 26px;
+    }
+
+
+
+    .articles .all_link
+    {
+        margin-top: 40px;
+    }
+
+
+    .articles .all_link a
+    {
+        width: 400px;
+        padding: 18px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .code
+    {
+        font-size: 140px;
+    }
+
+
+    .error_info .link a
+    {
+        width: 300px;
+        padding: 20px;
+    }
+}

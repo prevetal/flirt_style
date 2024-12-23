@@ -1,0 +1,513 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 32px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 140px;
+    }
+
+    .block.small_m
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .cont
+    {
+        padding: 0 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        max-width: calc(100% - 48px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        right: 0;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        width: 200px;
+    }
+
+
+    header .mob_close_btn
+    {
+        top: 0;
+    }
+
+
+    header .cont
+    {
+        padding: 0 12px;
+    }
+
+
+    header .logo
+    {
+        margin-bottom: 28px;
+    }
+
+
+    header .logo img
+    {
+        height: 30px;
+    }
+
+
+    header .sub_menu
+    {
+        font-size: 12px;
+
+        width: 280px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo
+    {
+        font-size: 10px;
+    }
+
+
+    .mob_header .logo img
+    {
+        height: 32px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+
+    .breadcrumbs
+    {
+        font-size: 12px;
+    }
+
+
+    .page_title
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .pre_title
+    {
+        margin-bottom: -10px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 29px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-top: 30px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 44px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 17px;
+    }
+
+
+    .first_section .image
+    {
+        margin-top: 30px;
+
+        gap: 24px;
+    }
+
+
+    .first_section .image img
+    {
+        order: 0;
+
+        height: 240px;
+
+        border-radius: 0 20px 20px;
+
+        clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%, 0 48px);
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .gallery .swiper-slide
+    {
+        width: 320px;
+    }
+
+
+
+    /*--------------
+        Dead end
+    --------------*/
+    .dead_end
+    {
+        padding-top: 60px;
+        padding-bottom: 440px;
+
+        border-radius: 60px 60px 0 0;
+    }
+
+
+    .dead_end .block_head .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .dead_end .items
+    {
+        bottom: 24px;
+
+        transform: translateX(-50%) scale(.7);
+    }
+
+
+
+    /*------------------------
+        Order psychologist
+    ------------------------*/
+    .order_psychologist
+    {
+        padding: 60px 0;
+
+        border-radius: 60px;
+    }
+
+
+
+    /*-------------
+        Experts
+    -------------*/
+    .experts .expert .name
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .experts .expert .features .label
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .experts .expert .features .val
+    {
+        width: 100%;
+    }
+
+
+    .experts .expert .photo
+    {
+        width: 280px;
+        height: 212px;
+    }
+
+
+    .experts .link a
+    {
+        padding: 17px 39px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list
+    {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+
+        gap: 40px;
+    }
+
+
+    .reviews .review
+    {
+        position: relative;
+    }
+
+
+    .reviews .review1
+    {
+        width: 100%;
+    }
+
+    .reviews .review2
+    {
+        left: 0;
+
+        width: 100%;
+    }
+
+    .reviews .review3
+    {
+        top: 0;
+
+        width: 100%;
+    }
+
+    .reviews .review4
+    {
+        bottom: 0;
+    }
+
+    .reviews .review5
+    {
+        top: 0;
+
+        width: 100%;
+    }
+
+    .reviews .review6
+    {
+        width: 100%;
+    }
+
+
+    .reviews .more
+    {
+        margin-top: 50px;
+    }
+
+
+
+    /*-------------
+        Methods
+    -------------*/
+    .methods .block_head
+    {
+        width: calc(100% + 32px);
+        margin-right: -16px;
+        margin-left: -16px;
+        padding: 60px 16px 50px;
+
+        border-radius: 0 20px 20px;
+
+        clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%, 0 48px);
+    }
+
+
+    .methods .block_head .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .methods .marquee
+    {
+        font-size: 14px;
+
+        margin-top: 30px;
+        padding: 16px 0;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .bottom br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Alternative
+    -----------------*/
+    .alternative .data
+    {
+        width: 960px;
+    }
+
+
+
+    /*-------------
+        Partner
+    -------------*/
+    .partner .data
+    {
+        padding: 0;
+
+        gap: 40px;
+    }
+
+
+    .partner .image
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        gap: 40px;
+    }
+
+
+    .contacts_info .type
+    {
+        width: 360px;
+        padding: 40px 24px;
+    }
+
+
+    .contacts_info .type .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .cols .list
+    {
+        gap: 40px;
+    }
+
+
+    .articles .article .thumb
+    {
+        width: 240px;
+        margin-bottom: 16px;
+    }
+
+
+    .articles .article .thumb + *
+    {
+        width: 100%;
+    }
+
+
+
+    .articles aside
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .articles .categories
+    {
+        padding: 20px;
+
+        gap: 20px;
+    }
+
+
+    .articles .categories .title
+    {
+        font-size: 22px;
+    }
+
+
+    .articles .categories .items
+    {
+        gap: 16px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .code
+    {
+        font-size: 124px;
+    }
+}

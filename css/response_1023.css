@@ -1,0 +1,699 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 40px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .accordion_item:nth-child(2n)
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 100%;
+
+        width: 320px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+
+        background: #f8f8f8;
+    }
+
+    header.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        /* overflow: auto; */
+        flex-direction: column;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 40px 0;
+
+        /* overscroll-behavior-y: contain; */
+    }
+
+
+    header .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    header .logo div,
+    header .phone
+    {
+        display: none;
+    }
+
+
+
+    header .logo
+    {
+        margin-bottom: 40px;
+    }
+
+
+    header .logo img
+    {
+        height: 35px;
+    }
+
+
+    header .menu
+    {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 16px;
+    }
+
+
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+
+    header .sub_menu
+    {
+        right: -20px;
+        left: auto;
+
+        width: 600px;
+        margin-top: 12px;
+
+        transform: none;
+    }
+
+
+    header .sub_menu:before,
+    header .sub_menu:after
+    {
+        display: none;
+    }
+
+
+    header .sub_menu > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.big_m
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 56px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .first_section .image
+    {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 40px;
+
+        gap: 40px;
+    }
+
+
+    .first_section .image img
+    {
+        order: 2;
+
+        height: 320px;
+    }
+
+
+    .first_section .desc
+    {
+        position: relative;
+
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .gallery .swiper-slide
+    {
+        width: 380px;
+    }
+
+
+
+    /*------------------
+        Our approach
+    ------------------*/
+    .our_approach .row
+    {
+        align-content: normal;
+        flex-direction: column;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        gap: 40px;
+    }
+
+
+    .our_approach .row > *
+    {
+        width: 360px;
+        max-width: calc(100% - 24px);
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .our_approach .item:nth-child(2)
+    {
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .our_approach .item:nth-child(3)
+    {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------
+        Dead end
+    --------------*/
+    .dead_end
+    {
+        padding-bottom: 560px;
+    }
+
+
+    .dead_end .items
+    {
+        bottom: 92px;
+
+        width: 680px;
+        height: 438px;
+        margin-left: 0;
+
+        transform: translateX(-50%) scale(1);
+    }
+
+
+    .dead_end .items .item
+    {
+        font-size: 13px;
+
+        padding: 11px 15px;
+    }
+
+
+    .dead_end .items .item1
+    {
+        top: 72px;
+        left: 56px;
+    }
+
+    .dead_end .items .item2
+    {
+        top: 131px;
+        left: 50px;
+    }
+
+    .dead_end .items .item3
+    {
+        top: 185px;
+        left: 8px;
+    }
+
+    .dead_end .items .item4
+    {
+        top: 236px;
+        left: 0;
+    }
+
+    .dead_end .items .item5
+    {
+        top: 293px;
+        bottom: auto;
+        left: 39px;
+    }
+
+    .dead_end .items .item6
+    {
+        top: 100px;
+        left: 270px;
+    }
+
+    .dead_end .items .item7
+    {
+        top: 165px;
+        left: 219px;
+    }
+
+    .dead_end .items .item8
+    {
+        top: 228px;
+        left: 210px;
+    }
+
+    .dead_end .items .item9
+    {
+        top: 280px;
+        bottom: auto;
+        left: 264px;
+    }
+
+    .dead_end .items .item10
+    {
+        top: 149px;
+        right: 34px;
+        left: auto;
+    }
+
+    .dead_end .items .item11
+    {
+        top: 207px;
+        right: 23px;
+        left: auto;
+    }
+
+    .dead_end .items .item12
+    {
+        top: 282px;
+        right: 8px;
+        left: auto;
+    }
+
+    .dead_end .items .item13
+    {
+        right: 43px;
+        bottom: 40px;
+        left: auto;
+    }
+
+    .dead_end .items .item14
+    {
+        top: 14px;
+        left: 250px;
+    }
+
+    .dead_end .items .item15
+    {
+        top: 9px;
+        left: 32px;
+
+        transform: rotate(2.274deg);
+    }
+
+    .dead_end .items .item16
+    {
+        top: 94px;
+        right: 0;
+        bottom: auto;
+        left: auto;
+    }
+
+    .dead_end .items .item17
+    {
+        top: 0;
+        right: 38px;
+    }
+
+    .dead_end .items .item18
+    {
+        top: auto;
+        right: 176px;
+        bottom: 0;
+    }
+
+    .dead_end .items .item19
+    {
+        right: auto;
+        bottom: 34px;
+        left: 55px;
+    }
+
+
+
+    /*------------------------
+        Order psychologist
+    ------------------------*/
+    .order_psychologist .data .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .order_psychologist .btns
+    {
+        width: 300px;
+        margin-top: 37px;
+        margin-left: 0;
+
+        gap: 30px;
+    }
+
+
+    .order_psychologist .btns .btn
+    {
+        height: 60px;
+    }
+
+
+
+    /*-------------
+        Experts
+    -------------*/
+    .experts .expert .photo
+    {
+        order: 2;
+
+        width: 460px;
+        height: 398px;
+        margin: 30px auto 0;
+    }
+
+
+    .experts .expert .photo + *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list
+    {
+        height: 1852px;
+    }
+
+
+    .reviews .review.bg
+    {
+        padding: 28px 16px 40px;
+    }
+
+
+    .reviews .review1
+    {
+        width: 324px;
+    }
+
+    .reviews .review2
+    {
+        left: 348px;
+
+        width: calc(100% - 348px);
+    }
+
+    .reviews .review3
+    {
+        top: 160px;
+
+        width: calc(100% - 348px);
+        padding-right: 4px !important;
+        padding-left: 20px !important;
+    }
+
+    .reviews .review4
+    {
+        bottom: 220px;
+        left: 0;
+
+        width: 100%;
+    }
+
+    .reviews .review5
+    {
+        top: 820px;
+        bottom: auto;
+
+        width: 324px;
+    }
+
+    .reviews .review6
+    {
+        width: 559px;
+    }
+
+
+    .reviews .review .title
+    {
+        font-size: 20px;
+    }
+
+
+    .reviews .review .head .title
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------
+        Methods
+    -------------*/
+    .methods .block_head
+    {
+        padding: 70px 24px 60px;
+    }
+
+
+    .methods .marquee
+    {
+        margin-top: 50px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .row
+    {
+        align-content: normal;
+        flex-direction: column;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        gap: 40px;
+    }
+
+
+    .tariffs .row > *
+    {
+        width: 360px;
+        max-width: calc(100% - 24px);
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .tariffs .tariff:nth-child(2)
+    {
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tariffs .tariff:nth-child(3)
+    {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+
+
+    /*-----------------
+        Alternative
+    -----------------*/
+    .alternative .scroll
+    {
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 0 24px;
+    }
+
+
+    .alternative .data
+    {
+        width: 1161px;
+    }
+
+
+
+    /*-------------
+        Partner
+    -------------*/
+    .partner .data
+    {
+        width: 100%;
+    }
+
+
+    .partner .image
+    {
+        width: 488px;
+        margin: 50px auto 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        flex-direction: column;
+    }
+
+
+    .contacts_info .type + .type
+    {
+        margin-left: 80px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .cols .list
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+
+    .articles aside
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    footer .links
+    {
+        width: calc(50% - 12px);
+        margin-left: 0;
+    }
+}
