@@ -4,6 +4,44 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+	Fancybox.bind('[data-fancybox]', {
+	    // Custom options for all galleries
+	});
+
+
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+	    Fancybox.close()
+		Fancybox.show([{
+			src: '#thanks',
+			type: 'inline'
+		}])
+
+	}, false );
+
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: "Закрыть",
+		NEXT: "Следующий",
+		PREV: "Предыдущий",
+		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
+	}
+
+	$('body').on('click', '.modal_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('modal'),
+			type: 'inline'
+		}])
+	})
+
 	// Gallery slider
 	const gallerySliders = [],
 		gallery = document.querySelectorAll('.gallery .swiper')
@@ -46,6 +84,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		allowTouchMove: false
 	  })
 
+
+	$('.show_more').click((e) => {
+		e.preventDefault()
+		$('.show_more').hide();
+		$(".show_more_text").slideDown();
+	})
 
 	// Mob. menu
 	$('.mob_header .mob_menu_btn, .overlay, header .mob_close_btn').click((e) => {
@@ -127,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
-			if (entry.intersectionRatio >= 0.1 && !entry.target.classList.contains('animated')) {
+			if (entry.intersectionRatio >= 0.2 && !entry.target.classList.contains('animated')) {
 				entry.target.classList.add('animated')
 			}
 		}

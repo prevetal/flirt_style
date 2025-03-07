@@ -70,7 +70,8 @@
     header .scroll
     {
         display: flex;
-        /* overflow: auto; */
+
+/* overflow: auto; */
         flex-direction: column;
 
         height: 100%;
@@ -78,7 +79,6 @@
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         padding: 40px 0;
-
         /* overscroll-behavior-y: contain; */
     }
 
@@ -289,12 +289,14 @@
     {
         bottom: 92px;
 
-        width: 680px;
+        width: 50%;
         height: 438px;
         margin-left: 0;
 
         transform: translateX(-50%) scale(1);
     }
+
+
 
 
     .dead_end .items .item
@@ -366,6 +368,8 @@
         top: 149px;
         right: 34px;
         left: auto;
+
+        display: none;
     }
 
     .dead_end .items .item11
@@ -373,6 +377,8 @@
         top: 207px;
         right: 23px;
         left: auto;
+
+        display: none;
     }
 
     .dead_end .items .item12
@@ -380,6 +386,8 @@
         top: 282px;
         right: 8px;
         left: auto;
+
+        display: none;
     }
 
     .dead_end .items .item13
@@ -387,6 +395,8 @@
         right: 43px;
         bottom: 40px;
         left: auto;
+
+        display: none;
     }
 
     .dead_end .items .item14
@@ -409,12 +419,16 @@
         right: 0;
         bottom: auto;
         left: auto;
+
+        display: none;
     }
 
     .dead_end .items .item17
     {
         top: 0;
         right: 38px;
+
+        display: none;
     }
 
     .dead_end .items .item18
@@ -422,6 +436,8 @@
         top: auto;
         right: 176px;
         bottom: 0;
+
+        display: none;
     }
 
     .dead_end .items .item19
@@ -455,6 +471,8 @@
 
     .order_psychologist .btns .btn
     {
+        line-height: 60px;
+
         height: 60px;
     }
 
@@ -467,8 +485,8 @@
     {
         order: 2;
 
-        width: 460px;
-        height: 398px;
+        width: 340px;
+        height: 380px;
         margin: 30px auto 0;
     }
 
@@ -695,5 +713,20 @@
     {
         width: calc(50% - 12px);
         margin-left: 0;
+    }
+
+    .dead_end .items .item
+    {
+        animation: none !important;
+
+        animation-timeline: none !important;
+        animation-range: none !important;
+        view-timeline-name: none !important;
+        view-timeline-axis: none !important;
+    }
+
+    .phone_wrap
+    {
+        margin-top: 20px;
     }
 }

@@ -13,7 +13,7 @@
 
     .block
     {
-        margin-bottom: 140px;
+        margin-bottom: 100px;
     }
 
     .block.small_m
@@ -60,7 +60,7 @@
     ------------*/
     header
     {
-        width: 200px;
+        width: 290px;
     }
 
 
@@ -156,9 +156,11 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block h2
+    .text_block h2,
+    .related_title,
+    .comments_title
     {
-        font-size: 29px;
+        font-size: 22px;
     }
 
 
@@ -285,7 +287,7 @@
     .experts .expert .photo
     {
         width: 280px;
-        height: 212px;
+        height: 280px;
     }
 
 
@@ -509,5 +511,58 @@
     .error_info .code
     {
         font-size: 124px;
+    }
+
+
+    .modal
+    {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .reviews .review .photo
+    {
+        transform: translateX(0px);
+    }
+
+    .alternative .data .title
+    {
+        font-size: 20px;
+    }
+
+    .alternative .items
+    {
+        font-size: 14px;
+    }
+
+    .alternative .data
+    {
+        width: 600px;
+    }
+
+    .item_video
+    {
+        width: calc(100% / 2 - 20px / 2);
+    }
+
+    .related_list .article
+    {
+        width: 100%;
+    }
+
+    .related_list .article .name
+    {
+        width: 100%;
+    }
+
+    .related_list .article .thumb
+    {
+        margin-bottom: 0;
+    }
+
+    .cats,
+    .tags
+    {
+        font-size: 14px;
     }
 }

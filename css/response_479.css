@@ -6,7 +6,7 @@
     :root
     {
         --font_size: 16px;
-        --font_size_title: 29px;
+        --font_size_title: 24px;
     }
 
 
@@ -161,6 +161,79 @@
 
     footer .links + .links
     {
-        margin-top: 40px;
+        /*margin-top: 40px;*/
+    }
+
+    .alternative .items .btn
+    {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 150%;
+
+        display: block;
+
+        width: 100%;
+        height: 60px;
+        padding: 17px;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .show_more_text
+    {
+        column-count: 1;
+    }
+
+    .dead_end .items
+    {
+        width: 110%;
+    }
+
+    .rouder
+    {
+        border-radius: 15px;
+    }
+
+    .item_video
+    {
+        width: calc(100%);
+    }
+
+    .all_video
+    {
+        padding: 18px 56px;
+    }
+
+    .links div:first-child
+    {
+        width: 100%;
+    }
+
+    .footer_right_menus
+    {
+        order: -1;
+
+        margin-bottom: 20px;
+        /*flex-direction: column;*/
+    }
+
+    .footer_right
+    {
+        width: 100%;
+    }
+
+    .info
+    {
+        font-size: 12px;
+    }
+
+    .info svg
+    {
+        width: 20px;
+        height: 20px;
     }
 }
