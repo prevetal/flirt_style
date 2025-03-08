@@ -5,14 +5,13 @@
     -------------------*/
     :root
     {
-        --font_size: 16px;
-        --font_size_title: 24px;
+        --font_size_title: 28px;
     }
 
 
     .cont
     {
-        padding: 0 12px;
+        padding: 0 20px;
     }
 
 
@@ -30,69 +29,167 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section .image
+    .first_section .genders
+    {
+        gap: 12px;
+    }
+
+
+    .first_section .genders > *
+    {
+        min-width: 148px;
+        padding-right: 44px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 100%;
+        margin-top: 24px;
+        padding-left: 0;
+    }
+
+
+    .first_section .button
+    {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+
+    .first_section .slider
     {
         margin-top: 24px;
-
-        gap: 20px;
     }
 
 
-    .first_section .title
+
+    /*---------------------
+        What difference
+    ---------------------*/
+    .what_difference .row > *
     {
-        font-size: 36px;
+        width: 100%;
     }
 
 
-    .first_section .sub_title
+    .what_difference .item
     {
-        font-size: 17px;
+        min-height: 112px;
+        padding: 47px 11px 11px;
     }
 
 
-    .first_section .image img
+    .what_difference .image img
     {
-        height: 180px;
+        height: auto;
     }
 
 
-
-    /*----------------
-        About info
-    ----------------*/
-    .about_info .gallery .swiper-slide
-    {
-        width: 300px;
-    }
-
-
-
-    /*------------------
-        Our approach
-    ------------------*/
-    .our_approach .row > *
-    {
-        max-width: 100%;
-    }
-
-
-
-    /*--------------
-        Dead end
-    --------------*/
-    .dead_end .block_head .title br
+    .what_difference .empty
     {
         display: none;
     }
 
 
-
-    /*------------------------
-        Order psychologist
-    ------------------------*/
-    .order_psychologist .btns
+    .what_difference .join_btn
     {
         width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row
+    {
+        margin-bottom: -30px;
+        margin-left: 0;
+    }
+
+
+    .steps .row > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+
+    .steps .join_btn
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*----------------
+        Price info
+    ----------------*/
+    .price_info .start
+    {
+        font-size: var(--font_size);
+
+        padding: 19px;
+    }
+
+
+    .price_info .item
+    {
+        font-size: var(--font_size);
+
+        padding: 0 20px;
+    }
+
+
+    .price_info .exp
+    {
+        font-size: 13px;
+    }
+
+
+    .price_info .join_btn
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .item .thumb + *
+    {
+        width: 100%;
+        margin-top: 8px;
+        padding-bottom: 9px;
+    }
+
+
+
+    .for_whom .slider .item .thumb
+    {
+        margin-bottom: 16px;
+
+        aspect-ratio: 270 / 110;
+    }
+
+
+    .for_whom .slider .item .thumb + *
+    {
+        min-height: 96px;
+        padding: 0 0 12px;
+    }
+
+
+    .for_whom .slider .item .thumb + * br
+    {
+        display: none;
     }
 
 
@@ -100,6 +197,12 @@
     /*-------------
         Experts
     -------------*/
+    .experts .expert .name
+    {
+        font-size: 24px;
+    }
+
+
     .experts .link a
     {
         padding: 17px 16px;
@@ -107,35 +210,25 @@
 
 
 
-    /*-------------
-        Methods
-    -------------*/
-    .methods .block_head
+    /*---------------
+        Materials
+    ---------------*/
+    .materials .row
     {
-        width: calc(100% + 24px);
-        margin-right: -12px;
-        margin-left: -12px;
-        padding: 60px 12px 50px;
+        margin-left: 0;
     }
 
 
-
-    /*-------------
-        Tariffs
-    -------------*/
-    .tariffs .row > *
+    .materials .row > *
     {
-        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
     }
 
 
-
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info .type + .type
+    .materials .all_link a
     {
-        margin-left: auto;
+        width: 100%;
     }
 
 
@@ -150,81 +243,40 @@
 
 
 
-    /*------------
-        Footer
-    ------------*/
-    footer .links
-    {
-        width: 100%;
-    }
-
-
-    footer .links + .links
-    {
-        /*margin-top: 40px;*/
-    }
-
-    .alternative .items .btn
-    {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 150%;
-
-        display: block;
-
-        width: 100%;
-        height: 60px;
-        padding: 17px;
-
-        text-align: center;
-        text-decoration: none;
-
-        color: #fff;
-        border-radius: 50px;
-    }
-
     .show_more_text
     {
         column-count: 1;
     }
 
-    .dead_end .items
-    {
-        width: 110%;
-    }
+
 
     .rouder
     {
         border-radius: 15px;
     }
 
+
+
     .item_video
     {
         width: calc(100%);
     }
+
+
 
     .all_video
     {
         padding: 18px 56px;
     }
 
+
+
     .links div:first-child
     {
         width: 100%;
     }
 
-    .footer_right_menus
-    {
-        order: -1;
 
-        margin-bottom: 20px;
-        /*flex-direction: column;*/
-    }
-
-    .footer_right
-    {
-        width: 100%;
-    }
 
     .info
     {

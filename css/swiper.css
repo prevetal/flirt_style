@@ -76,17 +76,17 @@
 .swiper-pagination-fraction
 {
     position: absolute;
-    bottom: -33px;
+    bottom: -10px;
     left: 0;
 
     display: flex;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 
     width: 100%;
-    height: 11px;
+    height: 5px;
 
     pointer-events: none;
 }
@@ -96,29 +96,27 @@
 {
     display: block;
 
-    width: 11px;
-    height: 11px;
+    width: 100%;
+    height: 5px;
 
-    transition: .2s linear;
+    transition: background .2s linear;
     pointer-events: auto;
 
     opacity: 1;
-    border: 2px solid #0098ff;
-    border-radius: 50%;
-    background: #0098ff;
+    border-radius: 10px;
+    background: #a18672;
 }
 
 .swiper-pagination-bullet + .swiper-pagination-bullet
 {
-    margin-left: 11px !important;
+    margin-left: 10px !important;
 }
 
 
 .swiper-pagination-bullet:hover,
 .swiper-pagination-bullet.active
 {
-    border-color: #0098ff;
-    background: #fff;
+    background: #e9430e;
 }
 
 

@@ -6,8 +6,8 @@
     -------------------*/
     :root
     {
-        --font_size: 16px;
-        --font_size_title: 44px;
+        --font_size: 15px;
+        --font_size_title: 40px;
     }
 
 
@@ -21,12 +21,12 @@
 
     .block
     {
-        margin-bottom: 160px;
+        margin-bottom: 124px;
     }
 
     .block.small_m
     {
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
 
 
@@ -41,24 +41,23 @@
 
 
 
-    /*---------------
-        Accordion
-    ---------------*/
-    .accordion_item
+    /*-------------
+        Animate
+    -------------*/
+    .animate.fadeUp
     {
-        padding-right: 24px;
+        transform: translateY(100px);
     }
 
 
-    .accordion_item:nth-child(2n)
+    .animate.fadeLeft
     {
-        padding-left: 24px;
+        transform: translateX(-100px);
     }
 
-
-    .accordion_item .head .icon
+    .animate.fadeRight
     {
-        right: 24px;
+        transform: translateX(100px);
     }
 
 
@@ -81,45 +80,25 @@
     ------------*/
     header
     {
-        padding-top: 40px;
+        padding: 32px 0;
     }
-
 
 
     header .menu
     {
-        gap: 28px;
+        margin-left: 64px;
+
+        gap: 32px;
     }
 
 
-    header .sub_menu
+    header .join_btn
     {
-        width: 480px;
-        margin-top: 20px;
-        padding: 20px;
+        font-size: 12px;
 
-        gap: 16px 20px;
+        padding: 10px 20px;
     }
 
-
-    header .sub_menu:after
-    {
-        height: 20px;
-    }
-
-
-
-    header .phone
-    {
-        font-size: 14px;
-    }
-
-
-    header .phone .icon
-    {
-        width: 20px;
-        height: 20px;
-    }
 
 
 
@@ -161,9 +140,22 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head.big_m
+    .block_head
     {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .title span
+    {
+        margin-top: 0;
+        padding-left: 40px;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: 40px;
     }
 
 
@@ -201,168 +193,305 @@
     -------------------*/
     .first_section
     {
-        padding-top: 44px;
+        padding-top: 16px;
+    }
+
+
+    .first_section .data
+    {
+        margin-top: 0;
     }
 
 
     .first_section .title
     {
-        font-size: 72px;
+        width: 452px;
     }
 
 
-    .first_section .sub_title
+    .first_section .genders
     {
-        font-size: 22px;
+        margin-top: 8px;
+        padding-left: 24px;
     }
 
 
-    .first_section .image img
+    .first_section .genders > *
     {
-        height: 360px;
+        font-size: 16px;
+
+        min-width: 164px;
     }
 
 
     .first_section .desc
     {
-        width: 556px;
-        padding: 24px 24px 0 0;
+        font-size: 16px;
+
+        margin-top: 32px;
+        padding-left: 24px;
+    }
+
+
+    .first_section .button
+    {
+        width: 292px;
+        margin-top: 40px;
+    }
+
+
+    .first_section .button .btn
+    {
+        padding: 12px 28px;
+    }
+
+
+    .first_section .button .exp
+    {
+        font-size: 13px;
+
+        margin-top: 12px;
+        padding-left: 0;
+    }
+
+
+    .first_section .slider
+    {
+        height: 652px;
+        margin-right: -24px;
+        padding-top: 88px;
+        padding-right: 0;
     }
 
 
 
-    /*----------------
-        About info
-    ----------------*/
-    .about_info .link a
+    /*---------------------
+        What difference
+    ---------------------*/
+    .what_difference .row
     {
-        padding: 18px 56px;
+        margin-bottom: -20px;
     }
 
 
-    .about_info .gallery .swiper-slide
+    .what_difference .row > *
     {
-        width: 480px;
+        margin-bottom: 20px;
     }
 
 
-
-    /*------------------
-        Our approach
-    ------------------*/
-    .our_approach .row
+    .what_difference .item
     {
-        margin-left: -24px;
+        font-size: 14px;
+        line-height: 140%;
+
+        min-height: 140px;
+        padding: 11px;
     }
 
 
-    .our_approach .row > *
+    .what_difference .item .icon
     {
-        width: calc(33.333% - 24px);
-        margin-left: 24px;
+        top: 15px;
+        left: 11px;
     }
 
 
-
-    /*--------------
-        Dead end
-    --------------*/
-    .dead_end
+    .what_difference .item .number
     {
-        margin-bottom: -70px;
-        padding-top: 80px;
-        padding-bottom: 400px;
+        font-size: 18px;
+        line-height: 23px;
 
-        border-radius: 70px 70px 0 0;
+        top: 15px;
+        right: 11px;
     }
 
 
-    .dead_end .block_head .desc
+    .what_difference .item .exp
     {
-        font-size: 20px;
-
-        width: 720px;
+        font-size: 12px;
     }
 
 
-    .dead_end .btn
+    .what_difference .join_btn
     {
-        width: 400px;
-    }
-
-
-    .dead_end .items
-    {
-        bottom: 32px;
-
-        transform: translateX(-50%) scale(.7);
+        width: 272px;
+        margin-top: 48px;
+        padding: 12px 28px;
     }
 
 
 
-    /*------------------------
-        Order psychologist
-    ------------------------*/
-    .order_psychologist
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row
     {
-        padding: 80px 0;
+        padding-top: 8px;
 
-        border-radius: 70px;
+        gap: 60px;
     }
 
 
-    .order_psychologist .data
+    .steps .step + .step:before
     {
-        padding-top: 0;
+        top: 16px;
+        left: -76px;
     }
 
 
-    .order_psychologist .data .text_block
+    .steps .step .number
     {
-        max-width: calc(100% - 408px);
+        font-size: 18px;
+
+        width: 76px;
+        height: 76px;
+        margin-bottom: 20px;
     }
 
 
-    .order_psychologist .btns
+    .steps .join_btn
     {
-        width: 360px;
-
-        gap: 40px;
+        width: 272px;
+        margin-top: 48px;
+        padding: 12px 28px;
     }
 
 
 
     /*-------------
-        Experts
+        Marquee
     -------------*/
-    .experts .expert
+    .marquee
     {
-        padding: 50px 0 0;
+        font-size: 16px;
+
+        padding: 20px 0;
     }
 
 
-    .experts .expert .photo
+
+    /*----------------
+        Price info
+    ----------------*/
+    .price_info
     {
-        width: 340px;
-        height: 380px;
+        padding: 60px 0 68px;
     }
 
 
-    .experts .expert .photo + *
+    .price_info .block_head
     {
-        width: calc(100% - 388px);
+        padding-bottom: 0;
     }
 
 
-    .experts .expert .features .val
+    .price_info .start
     {
-        width: calc(100% - 216px);
+        font-size: 22px;
+
+        width: 760px;
+        padding: 31px;
     }
 
 
-    .experts .expert .features .val > *
+    .price_info .item
     {
-        margin-bottom: 20px;
+        font-size: 22px;
+
+        width: 760px;
+        margin-top: 32px;
+    }
+
+
+    .price_info .exp
+    {
+        margin-top: 4px;
+    }
+
+
+    .price_info .join_btn
+    {
+        width: 272px;
+        margin-top: 48px;
+        padding: 12px 28px;
+    }
+
+
+
+    /*--------------
+        Included
+    --------------*/
+    .included .image
+    {
+        width: 440px;
+    }
+
+
+    .included .data
+    {
+        line-height: 140%;
+
+        width: calc(100% - 500px);
+
+        gap: 12px;
+    }
+
+
+    .included .data > *
+    {
+        padding-left: 28px;
+
+        background-position: 0 2px;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom
+    {
+        padding: 60px 0 68px;
+    }
+
+
+    .for_whom .items
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .for_whom .item .thumb
+    {
+        width: 160px;
+    }
+
+
+    .for_whom .item .thumb + *
+    {
+        line-height: 140%;
+
+        width: calc(100% - 180px);
+    }
+
+
+    .for_whom .slider
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .for_whom .slider .item .thumb
+    {
+        aspect-ratio: 270 / 110;
+    }
+
+
+    .for_whom .slider .item .thumb + *
+    {
+        min-height: 77px;
+        padding: 0 24px 14px;
     }
 
 
@@ -370,15 +499,15 @@
     /*-------------
         Reviews
     -------------*/
-    .reviews .list
+    .reviews .block_head
     {
-        height: 1343px;
+        padding-bottom: 0;
     }
 
 
-    .reviews .review .title
+    .reviews .list
     {
-        font-size: 22px;
+        height: 1228px;
     }
 
 
@@ -408,6 +537,12 @@
     }
 
 
+    .reviews .review .title
+    {
+        font-size: 22px;
+    }
+
+
     .reviews .review1 .text_block,
     .reviews .review3 .text_block,
     .reviews .review4 .text_block
@@ -423,91 +558,115 @@
 
 
 
+    .reviews .more
+    {
+        line-height: 140%;
+
+        margin-top: 40px;
+    }
+
+
+
     /*-------------
-        Methods
+        Experts
     -------------*/
-    .methods
+    .experts
+    {
+        padding: 60px 0 80px;
+    }
+
+
+    .experts .list
+    {
+        gap: 48px;
+    }
+
+
+    .experts .block_head
     {
         padding-bottom: 0;
     }
 
 
-    .methods .block_head
+    .experts .expert .photo
     {
-        padding: 80px;
+        width: 340px;
+        height: 376px;
+    }
+
+
+    .experts .expert .photo + *
+    {
+        width: calc(100% - 388px);
+        padding-top: 24px;
+    }
+
+
+    .experts .expert .name
+    {
+        font-size: 28px;
+        line-height: 140%;
+
+        margin-bottom: 28px;
+    }
+
+
+    .experts .expert .features
+    {
+        gap: 28px;
+    }
+
+
+    .experts .expert .features .val
+    {
+        width: calc(100% - 216px);
+    }
+
+
+    .experts .expert .features .val > *
+    {
+        margin-bottom: 20px;
     }
 
 
 
-    .methods .marquee
+    /*---------------
+        Materials
+    ---------------*/
+    .materials .row
     {
-        margin-top: 60px;
-    }
-
-
-
-    /*-------------
-        Tariffs
-    -------------*/
-    .tariffs .row
-    {
+        margin-bottom: -40px;
         margin-left: -24px;
     }
 
 
-    .tariffs .row > *
+    .materials .row > *
     {
         width: calc(33.333% - 24px);
+        margin-bottom: 40px;
         margin-left: 24px;
     }
 
 
-    .tariffs .bottom
+    .materials .item .thumb + *
     {
-        margin-top: 80px;
+        padding: 0 16px;
     }
 
 
-    .tariffs .bottom .btn
+    .materials .all_link
     {
+        margin-top: 40px;
+    }
+
+
+    .materials .all_link a
+    {
+        font-size: 14px;
+        line-height: 140%;
+
         width: 400px;
-    }
-
-
-
-    /*-----------------
-        Alternative
-    -----------------*/
-    .alternative .data .title
-    {
-        padding: 40px 20px 16px;
-    }
-
-
-
-    /*-------------
-        Partner
-    -------------*/
-    .partner .data
-    {
-        width: calc(100% - 520px);
-    }
-
-
-    .partner .image
-    {
-        width: 480px;
-        margin-right: 0;
-    }
-
-
-
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info .row
-    {
-        gap: 50px;
+        padding: 20px;
     }
 
 
@@ -588,5 +747,50 @@
     {
         width: 300px;
         padding: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 68px 0 48px;
+    }
+
+
+    footer .cont
+    {
+        gap: 40px 60px;
+    }
+
+
+
+    footer .section
+    {
+        font-size: 16px;
+
+        width: 420px;
+    }
+
+
+    footer .socials
+    {
+        gap: 28px;
+    }
+
+
+
+    footer .links
+    {
+        gap: 10px 60px;
+    }
+
+
+
+    footer .exp
+    {
+        margin-top: 0;
     }
 }

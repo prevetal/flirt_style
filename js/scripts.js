@@ -4,10 +4,76 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+	// First section slider
+	let firstSectionSlider = document.querySelector('.first_section .swiper')
 
-	Fancybox.bind('[data-fancybox]', {
-	    // Custom options for all galleries
-	});
+	if (firstSectionSlider) {
+		new Swiper('.first_section .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			lazy: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false
+			}
+		})
+	}
+
+
+	// Fancybox.bind('[data-fancybox]', {
+	//     // Custom options for all galleries
+	// });
+
+
+	// Marquee
+	new Swiper('.marquee .swiper', {
+		spaceBetween: 16,
+		centeredSlides: true,
+		speed: 6000,
+		autoplay: {
+			delay: 1,
+			disableOnInteraction: true
+		},
+		loop: true,
+		slidesPerView:'auto',
+		allowTouchMove: false
+	})
+
+
+	// For whom slider
+	let forWhomSlider = document.querySelector('.for_whom .swiper')
+
+	if (forWhomSlider) {
+		new Swiper('.for_whom .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			lazy: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			}
+		})
+	}
 
 
 	document.addEventListener( 'wpcf7mailsent', function( event ) {
@@ -18,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}])
 
 	}, false );
+
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
@@ -41,48 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			type: 'inline'
 		}])
 	})
-
-	// Gallery slider
-	const gallerySliders = [],
-		gallery = document.querySelectorAll('.gallery .swiper')
-
-	gallery.forEach((el, i) => {
-		el.classList.add('gallery_s' + i)
-
-		let options = {
-			loop: true,
-			speed: 10000,
-			autoplay: {
-				delay: 1,
-				disableOnInteraction: true
-			},
-			allowTouchMove: false,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			lazy: true,
-			spaceBetween: 4,
-			slidesPerView: 'auto',
-			loopAdditionalSlides: 1
-		}
-
-		gallerySliders.push(new Swiper('.gallery_s' + i, options))
-	})
-
-
-	// Marquee
-	new Swiper('.methods .marquee .swiper', {
-		spaceBetween: 16,
-		centeredSlides: true,
-		speed: 6000,
-		autoplay: {
-			delay: 1,
-			disableOnInteraction: true
-		},
-		loop: true,
-		slidesPerView:'auto',
-		allowTouchMove: false
-	  })
 
 
 	$('.show_more').click((e) => {
@@ -146,24 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
-
-
-	// Accordion
-	$('body').on('click', '.accordion .accordion_item .head', function(e) {
-		e.preventDefault()
-
-		let item = $(this).closest('.accordion_item'),
-			accordion = $(this).closest('.accordion')
-
-		if (item.hasClass('active')) {
-			item.removeClass('active').find('.data').slideUp(300)
-		} else {
-			accordion.find('.accordion_item').removeClass('active')
-			accordion.find('.data').slideUp(300)
-
-			item.addClass('active').find('.data').slideDown(300)
-		}
-	})
 
 
 	// Animation

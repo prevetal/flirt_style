@@ -26,11 +26,12 @@
 		<!-- Connecting fonts from Google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
 		<!-- Connecting style files -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
 		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
@@ -43,20 +44,27 @@
 		<div class="wrap">
 			<div class="main">
 				<header>
-					<button class="mob_close_btn">
-						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
-					</button>
-
 					<div class="scroll">
 						<div class="cont row">
-							<a href="/" class="logo">
+							<div class="logo">
 								<div>Roman Vinilov Incorporated</div>
+
 								<img src="images/logo.svg" alt="">
-							</a>
+
+								<div class="age">18+</div>
+							</div>
 
 							<nav class="menu row">
 								<div class="menu_item">
-									<a href="/">Эксперты</a>
+									<a href="/">Что за чат</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Как начать</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Тарифы</a>
 								</div>
 
 								<div class="menu_item">
@@ -64,49 +72,25 @@
 								</div>
 
 								<div class="menu_item">
-									<a href="/">Консультация</a>
+									<a href="/">Наши психологи</a>
 								</div>
 
 								<div class="menu_item">
-									<a class="sub_link active">
-										<span>Статьи</span>
-
-										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
-									</a>
-
-									<div class="sub_menu">
-										<div><a href="/">Знакомства</a></div>
-
-										<div><a href="/">Девушка теряет интерес</a></div>
-
-										<div><a href="/">Отношения</a></div>
-
-										<div><a href="/">Поругались с девушкой</a></div>
-
-										<div><a href="/">Как вернуть девушку</a></div>
-
-										<div><a href="/">Как вернуть жену</a></div>
-
-										<div><a href="/">Как влюбить девушку</a></div>
-
-										<div><a href="/">Лучшие статьи</a></div>
-									</div>
-								</div>
-
-								<div class="menu_item">
-									<a href="/">Видео</a>
-								</div>
-
-								<div class="menu_item">
-									<a href="/">Курсы</a>
+									<a href="/">Материалы</a>
 								</div>
 							</nav>
 
-							<div class="phone">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_tg.svg" alt="">
+								</a>
 
-								<a href="tel:+7(916) 000-11-16">+7(916) 000-11-16</a>
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_whatsapp.svg" alt="">
+								</a>
 							</div>
+
+							<button class="join_btn">Вступить в чат!</button>
 						</div>
 					</div>
 				</header>
@@ -114,13 +98,15 @@
 
 				<section class="mob_header">
 					<div class="cont row">
-						<a href="/" class="logo">
-							<div>Roman Vinilov Incorporated</div>
+						<div class="logo">
 							<img src="images/logo.svg" alt="">
-						</a>
+
+							<div class="age">18+</div>
+						</div>
 
 						<button class="mob_menu_btn">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 						</button>
 					</div>
 				</section>
@@ -140,7 +126,7 @@
 				</section>
 
 
-				<section class="articles block">
+				<section class="articles block smallest_m">
 					<div class="cont">
 						<div class="cols">
 							<div class="list">
@@ -254,45 +240,56 @@
 
 			<footer>
 				<div class="cont row">
-					<div class="col">
-						<div class="logo">
-							<img src="images/logo.svg" alt="">
+					<div class="logo">
+						<!-- <div>Roman Vinilov Incorporated</div> -->
+
+						<img src="images/logo.svg" alt="">
+
+						<div class="age">18+</div>
+					</div>
+
+					<div class="section">
+						<div class="copyright">&copy; 2025, ИП Винилов</div>
+
+						<div class="requisites">ОГРНИП 315547600093570, ИНН 540301768363</div>
+					</div>
+
+					<div class="section">
+						<div class="site">
+							Сайт проекта<br> <a href="thhps://psy-citcle.ru" target="_blank" rel="noopener nofollow">psy-citcle.ru</a>
 						</div>
+					</div>
 
-						<div class="info">
-							<div class="copyright">&copy; 2025 Все права защищены</div>
+					<div class="section">
+						<div class="phone">Контактный телефон<br> <a href="tel:+7 983 000 111 6">+7 983 000 111 6</a></div>
+					</div>
 
-							<div class="requisites">
-								ИП Буланов Дмитрий Вячеславович<br>
-								ОГРНИП 319392600008767
-							</div>
+					<div class="section">
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow" class="youtube_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="vk_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+							</a>
 						</div>
 					</div>
 
 					<div class="links">
-						<div class="title">Документы</div>
+						<div><a href="/">Политика конфиденциальности</a></div>
 
-						<div class="items">
-							<div><a href="/">Политика конфиденциальности</a></div>
+						<div><a href="/">Согласие с рассылкой</a></div>
 
-							<div><a href="/">Отказ от ответственности</a></div>
+						<div><a href="/">Отказ от ответственности</a></div>
 
-							<div><a href="/">Договор оферты</a></div>
-						</div>
+						<div><a href="/">Политика возврата</a></div>
 					</div>
 
-					<div class="links">
-						<div class="title">Навигация</div>
+					<div class="exp">
+						<div>* Meta Platforms Inc. (соц. сети Instagram) признана экстремистской,<br> её деятельность запрещена на территории России.</div>
 
-						<div class="items">
-							<div><a href="/">Эксперты</a></div>
-
-							<div><a href="/">Отзывы</a></div>
-
-							<div><a href="/">Стоимость консультации</a></div>
-
-							<div><a href="/">FAQ</a></div>
-						</div>
+						<div>** На сайте использованы изображения Freepik.com</div>
 					</div>
 				</div>
 			</footer>
@@ -306,6 +303,7 @@
 		<script src="js/jquery-3.6.3.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
 		<script src="js/imask.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

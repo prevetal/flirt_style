@@ -6,19 +6,7 @@
     -------------------*/
     :root
     {
-        --font_size: 16px;
         --font_size_title: 32px;
-    }
-
-
-    .block
-    {
-        margin-bottom: 100px;
-    }
-
-    .block.small_m
-    {
-        margin-bottom: 100px;
     }
 
 
@@ -28,19 +16,10 @@
     }
 
 
-
-    /*---------------
-        Accordion
-    ---------------*/
-    .accordion_item .head .title
+    .block,
+    .block.small_m
     {
-        max-width: calc(100% - 48px);
-    }
-
-
-    .accordion_item .head .icon
-    {
-        right: 0;
+        margin-bottom: 80px;
     }
 
 
@@ -51,64 +30,6 @@
     .fancybox__slide
     {
         padding: 20px;
-    }
-
-
-
-    /*------------
-        Header
-    ------------*/
-    header
-    {
-        width: 290px;
-    }
-
-
-    header .mob_close_btn
-    {
-        top: 0;
-    }
-
-
-    header .cont
-    {
-        padding: 0 12px;
-    }
-
-
-    header .logo
-    {
-        margin-bottom: 28px;
-    }
-
-
-    header .logo img
-    {
-        height: 30px;
-    }
-
-
-    header .sub_menu
-    {
-        font-size: 12px;
-
-        width: 280px;
-    }
-
-
-
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header .logo
-    {
-        font-size: 10px;
-    }
-
-
-    .mob_header .logo img
-    {
-        height: 32px;
     }
 
 
@@ -139,16 +60,21 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head,
-    .block_head.big_m
+    .block_head
     {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
 
-    .block_head .pre_title
+    .block_head .title span
     {
-        margin-bottom: -10px;
+        padding-left: 24px;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: 24px;
     }
 
 
@@ -165,135 +91,141 @@
 
 
 
-    /*-------------------
-        First section
-    -------------------*/
-    .first_section
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
     {
-        padding-top: 30px;
+        padding: 20px 0;
     }
 
 
-    .first_section .title
+    .mob_header .mob_menu_btn
     {
-        font-size: 44px;
+        width: 44px;
+        height: 36px;
     }
 
 
-    .first_section .sub_title
+    .mob_header .mob_menu_btn .icon
     {
-        font-size: 17px;
+        width: 44px;
+        height: 16px;
     }
 
 
-    .first_section .image
-    {
-        margin-top: 30px;
 
-        gap: 24px;
+    /*---------------------
+        What difference
+    ---------------------*/
+    .what_difference .row > *
+    {
+        width: calc(50% - 20px);
     }
 
 
-    .first_section .image img
+    .what_difference .item
     {
-        order: 0;
-
-        height: 240px;
-
-        border-radius: 0 20px 20px;
-
-        clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%, 0 48px);
+        padding: 8px;
     }
 
 
-    .first_section .desc
+    .what_difference .empty.tablet
     {
-        font-size: 14px;
+        display: none;
+    }
+
+
+    .what_difference .join_btn
+    {
+        width: 248px;
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .steps .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .steps .step + .step:before
+    {
+        display: none;
+    }
+
+
+    .steps .step .number
+    {
+        font-size: 16px;
+
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+    }
+
+
+    .steps .join_btn
+    {
+        width: 248px;
+        margin-top: 40px;
     }
 
 
 
     /*----------------
-        About info
+        Price info
     ----------------*/
-    .about_info .gallery .swiper-slide
+    .price_info .start
     {
-        width: 320px;
+        font-size: 18px;
+
+        padding: 23px;
+    }
+
+
+    .price_info .item
+    {
+        font-size: 18px;
+
+        margin-top: 24px;
+    }
+
+
+    .price_info .join_btn
+    {
+        width: 248px;
+        margin-top: 40px;
     }
 
 
 
     /*--------------
-        Dead end
+        Included
     --------------*/
-    .dead_end
-    {
-        padding-top: 60px;
-        padding-bottom: 440px;
-
-        border-radius: 60px 60px 0 0;
-    }
-
-
-    .dead_end .block_head .desc
-    {
-        font-size: 16px;
-    }
-
-
-    .dead_end .items
-    {
-        bottom: 24px;
-
-        transform: translateX(-50%) scale(.7);
-    }
-
-
-
-    /*------------------------
-        Order psychologist
-    ------------------------*/
-    .order_psychologist
-    {
-        padding: 60px 0;
-
-        border-radius: 60px;
-    }
-
-
-
-    /*-------------
-        Experts
-    -------------*/
-    .experts .expert .name
-    {
-        margin-bottom: 16px;
-    }
-
-
-    .experts .expert .features .label
-    {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-
-    .experts .expert .features .val
+    .included .image
     {
         width: 100%;
     }
 
 
-    .experts .expert .photo
+    .included .data
     {
-        width: 280px;
-        height: 280px;
-    }
-
-
-    .experts .link a
-    {
-        padding: 17px 39px;
+        width: 100%;
+        margin-top: 30px;
     }
 
 
@@ -355,102 +287,61 @@
     }
 
 
-    .reviews .more
+    .reviews .review .photo
     {
-        margin-top: 50px;
+        transform: translateX(0px);
     }
 
 
 
     /*-------------
-        Methods
+        Experts
     -------------*/
-    .methods .block_head
+    .experts .expert .name
     {
-        width: calc(100% + 32px);
-        margin-right: -16px;
-        margin-left: -16px;
-        padding: 60px 16px 50px;
-
-        border-radius: 0 20px 20px;
-
-        clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%, 0 48px);
+        margin-bottom: 16px;
     }
 
 
-    .methods .block_head .desc
+    .experts .expert .features .label
     {
-        font-size: 16px;
+        width: 100%;
+        margin-bottom: 16px;
     }
 
 
-    .methods .marquee
+    .experts .expert .features .val
     {
-        font-size: 14px;
-
-        margin-top: 30px;
-        padding: 16px 0;
+        width: 100%;
     }
 
 
-
-    /*-------------
-        Tariffs
-    -------------*/
-    .tariffs .bottom br
+    .experts .expert .photo
     {
-        display: none;
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .experts .link a
+    {
+        padding: 17px 39px;
     }
 
 
 
-    /*-----------------
-        Alternative
-    -----------------*/
-    .alternative .data
+    /*---------------
+        Materials
+    ---------------*/
+    .materials .row > *
     {
-        width: 960px;
+        width: calc(50% - 24px);
     }
 
 
-
-    /*-------------
-        Partner
-    -------------*/
-    .partner .data
+    .materials .all_link a
     {
-        padding: 0;
-
-        gap: 40px;
-    }
-
-
-    .partner .image
-    {
-        margin-top: 40px;
-    }
-
-
-
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info .row
-    {
-        gap: 40px;
-    }
-
-
-    .contacts_info .type
-    {
-        width: 360px;
-        padding: 40px 24px;
-    }
-
-
-    .contacts_info .type .title
-    {
-        font-size: 22px;
+        width: 280px;
     }
 
 
@@ -514,36 +405,33 @@
     }
 
 
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links
+    {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+
     .modal
     {
         width: 100%;
         padding: 20px;
     }
 
-    .reviews .review .photo
-    {
-        transform: translateX(0px);
-    }
 
-    .alternative .data .title
-    {
-        font-size: 20px;
-    }
-
-    .alternative .items
-    {
-        font-size: 14px;
-    }
-
-    .alternative .data
-    {
-        width: 600px;
-    }
 
     .item_video
     {
         width: calc(100% / 2 - 20px / 2);
     }
+
+
 
     .related_list .article
     {
@@ -559,6 +447,8 @@
     {
         margin-bottom: 0;
     }
+
+
 
     .cats,
     .tags
